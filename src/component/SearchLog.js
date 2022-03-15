@@ -6,15 +6,15 @@ export default function SearchLog() {
   const sortedLocalStorageKeysArray = getSortedLocalStorageKeys();
 
   let SearchLogListTags = "<ol>";
-  if (sortedLocalStorageKeysArray == false) {
-    SearchLogListTags += `<li>저장된 검색 내역이 없습니다.</li>`;
-  }
   if (sortedLocalStorageKeysArray) {
     SearchLogListTags += "<div><b>검색내역</b></div>";
-    sortedLocalStorageKeysArray.map((key, idx) => {
+    sortedLocalStorageKeysArray.map((key) => {
       const localStorageValue = window.localStorage.getItem(key);
       SearchLogListTags += `<li> ${localStorageValue}</li>`;
     });
+  }
+  if (sortedLocalStorageKeysArray == false) {
+    SearchLogListTags += `<div>저장된 검색 내역이 없습니다.</div>`;
   }
   SearchLogListTags += "</ol>";
 
