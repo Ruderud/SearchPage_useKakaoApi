@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색창</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>간단한 Kakao 검색창</h1>
+    <div class="SearchLog__Container"></div>
+    <form class="SearchInput__Container" autocomplete="off">
+      <input
+        type="text"
+        class="SearchInput"
+        placeholder="검색할 내용을 입력하세요. 엔터로 5개까지 기록이 저장가능."
+        autofocus
+      />
+      <button class="SearchBtn">검색</button>
+    </form>
+    <div class="Suggestion__Container"></div>
+    <div class="SearchResult__Container"></div>
+  </body>
+  <script src="./src/index.js" type="module"></script>
+</html>

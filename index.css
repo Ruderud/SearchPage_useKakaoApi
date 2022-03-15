@@ -1,0 +1,55 @@
+body {
+  margin: 0 auto 0 auto;
+  width: 600px;
+  padding: 20px;
+}
+
+.SearchInput {
+  width: 400px;
+}
+
+.Suggestion__Container b {
+  color: red;
+}
+
+.MoveLink {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Suggestion__Container .Selected {
+  background-color: rgb(159, 183, 254);
+  color: white;
+}
+
+.Suggestion__Container ul {
+  list-style: none;
+  padding: 0;
+  background-color: rgb(213, 213, 213);
+}
+
+.Suggestion__Container li {
+  display: flex;
+}
+
+.Suggestion__Container li:hover {
+  background-color: rgb(197, 210, 247);
+}
+
+.Suggestion__title {
+  display: "block";
+  width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+li > a {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.Suggestion__elementContents {
+  display: none;
+}
