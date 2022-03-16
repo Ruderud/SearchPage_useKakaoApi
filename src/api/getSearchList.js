@@ -4,8 +4,8 @@ export const getSearchList = async (inputText) => {
   const config = {
     method: "GET",
     headers: {
-//       "Content-Type": "application/json",
-      Authorization: `KakaoAK ${process.env.KAKAO_API_KEY}`,
+      "Content-Type": "application/json",
+      Authorization: `KakaoAK ${KAKAO_API_KEY}`,
     },
   };
 
