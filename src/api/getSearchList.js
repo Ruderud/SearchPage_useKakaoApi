@@ -1,3 +1,5 @@
+import KAKAO_API_KEY from "./apiKey.js";
+
 const baseURL = "https://dapi.kakao.com";
 
 export const getSearchList = async (inputText) => {
