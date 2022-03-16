@@ -4,6 +4,8 @@ Kakao open Api를 이용한 간단한 검색창
 
 상반기 Front과제복기용
 
+배포주소: https://fa918844.searchpage-usekakaoapi.pages.dev/
+
 ## 기능
 
 1. 단어 입력시 자동검색(유사리스트 10개를 자동노출)
